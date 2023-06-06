@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="author" content="IB, BB>
+    <meta name="author" content="IB; BB; WobWeb">
     <meta name="keywords" content="FullGame, olcsó, konzol, játékok, ps, xbox, nintendo, vr, kinect, series">
     <link rel="icon" href="images/favicon-modified.png">
     <meta charset="UTF-8" />
@@ -10,36 +10,12 @@
     <link rel="stylesheet" href="style.css">
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="wrapper">
-      <img src="#" alt="">
-      <div class="content">
-        <header>Cookies Consent</header>
-        <p>This website use cookies to ensure you get the best experience on our website.</p>
-        <div class="buttons">
-          <button class="item">I understand</button>
-          <a href="#" class="item">Learn more</a>
-        </div>
-      </div>
-    </div>
-    <script>
-      const cookieBox = document.querySelector(".wrapper"),
-      acceptBtn = cookieBox.querySelector("button");
-      acceptBtn.onclick = ()=>{
-        //setting cookie for 1 month, after one month it'll be expired automatically
-        document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
-        if(document.cookie){ //if cookie is set
-          cookieBox.classList.add("hide"); //hide cookie box
-        }else{ //if cookie not set then alert an error
-          alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
-        }
-      }
-      let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); //checking our cookie
-      //if cookie is set then hide the cookie box else show it
-      checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-    </script>
     <header>
+      <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script><script> window.start.init({Palette:"palette3",Mode:"floating right",Theme:"classic",})</script>
+
       <nav class="navbar">
         <h2 class="logo"><a href="#">FullGame</a></h2>
         <input type="checkbox" id="menu-toggler">
@@ -59,6 +35,7 @@
       </nav>
     </header>
 
+    
     <section class="homepage" id="home">
       <div class="content">
         <div class="text">
@@ -69,6 +46,21 @@
       </div>
     </section>
 
+<!--    <div class="wrapper">
+      <header>
+        <i class="bx bx-cookie"></i>
+        <h2>Cookies Consent</h2>
+      </header>
+      <div class="data">
+        <p>This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="#"> Read more...</a></p>
+      </div>
+      <div class="buttons">
+        <button class="button" id="acceptBtn">Accept</button>
+        <button class="button" id="declineBtn">Decline</button>
+      </div>
+    </div>
+
+another cookie-->
     <section class="services" id="services">
       <h2>Termékeink</h2>
       <p>Használt és új termékek</p>
@@ -119,8 +111,8 @@
           <h3>69 990FT</h3>
         </li>
         
-      </ul>
-    </section>
+        </ul>
+      </section>
       
       <BUTTON class="show" ID="Show" VALUE="Click to show" ONCLICK=" document.getElementById('Show').style.display='none'; document.getElementById('Hide').style.display='block'; document.getElementById('myDIV').style.display='block'">asda-asda</BUTTON>
 
@@ -200,7 +192,7 @@
           
           </ul>
         </section>
-      </section>
+    </section>
 
     <BUTTON class="hide" ID="Hide" VALUE="Click to hide" ONCLICK=" document.getElementById('Show').style.display='block'; document.getElementById('Hide').style.display='none'; document.getElementById('myDIV').style.display='none'">asda</BUTTON>
 
